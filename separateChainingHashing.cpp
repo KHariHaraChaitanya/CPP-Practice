@@ -19,7 +19,6 @@ class Solution{
                 vector<int>v;
                 hm.push_back(v);  
         }
-       
       	for(int i=0;i<sizeOfArray;i++){
           int k=arr[i]%hashSize;
           hm[k].push_back(arr[i]);
@@ -29,7 +28,6 @@ class Solution{
 };
 
 
-
 int main() {
 	int t;
 	cin>>t;
@@ -37,18 +35,14 @@ int main() {
 	{
 	    int hashSize;
 	    cin>>hashSize;
-	    
-	    
 	    int sizeOfArray;
 	    cin>>sizeOfArray;
 	    int arr[sizeOfArray];
-	    
 	    for(int i=0;i<sizeOfArray;i++)
 	    cin>>arr[i];
 	    Solution obj;
 	    vector<vector<int>> hashTable;
-	    hashTable = obj.separateChaining( hashSize, arr, sizeOfArray);
-	    
+	    hashTable = obj.separateChaining( hashSize, arr, sizeOfArray);   
 	    for(int i=0;i<hashTable.size();i++)
 	    {
 	        if(hashTable[i].size()>0)
@@ -61,10 +55,7 @@ int main() {
 	            cout<<hashTable[i][hashTable[i].size()-1];
 	            cout<<endl;
 	        }
-	    }
-	    
-	    
-	    
+	    }    
 	}
 	return 0;
 };
