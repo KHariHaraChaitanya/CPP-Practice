@@ -16,7 +16,7 @@ struct Node
 Node* buildTree(string str)
 {   
     if(str.length() == 0 || str[0] == 'N')
-            return NULL;
+        return NULL;
     vector<string> ip;
     
     istringstream iss(str);
