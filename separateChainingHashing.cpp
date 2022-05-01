@@ -15,15 +15,15 @@ class Solution{
            int k=arr[i]%hashSize;
            if(maxHash<k)maxHash=k;
         }
-       for(int i=0;i<=maxHash;i++){
+        for(int i=0;i<=maxHash;i++){
                 vector<int>v;
                 hm.push_back(v);  
-       }
+        }
        
-      for(int i=0;i<sizeOfArray;i++){
+      	for(int i=0;i<sizeOfArray;i++){
           int k=arr[i]%hashSize;
           hm[k].push_back(arr[i]);
-      }
+      	}
        return hm;  
     }
 };
