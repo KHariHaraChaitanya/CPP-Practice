@@ -17,7 +17,7 @@ class Solution{
         }
        for(int i=0;i<=maxHash;i++){
                 vector<int>v;
-                hm.push_back(v); 
+                hm.push_back(v);  
        }
        
       for(int i=0;i<sizeOfArray;i++){
